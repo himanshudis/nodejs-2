@@ -1,0 +1,14 @@
+<h1>The list of candidates in database</h1>
+
+<% user.forEach(function(thing){%>
+    <% link=thing._id %>
+    <h2><%= thing._id%></h2>
+    <li><%= thing.fullname%></li>
+    <li><%= thing.email%></li>
+    <li><%= thing.mobile%></li>
+    <li><%= thing.city%></li>
+    <li><%= thing.password%></li>
+    <a href='/show/<%=thing._id%>'>show</a>
+    <a href='/edit/<%=thing._id%>'>Edit</a>
+    <a href='/delete/<%=thing._id%>'>delete</a>
+<%})%>

@@ -1,0 +1,10 @@
+<h1>Welcome to login page</h1>
+<form method="POST" action='/login'>
+    <input type="text" name='fullname' value='<%=dat.fullname %>'>
+    <input type="email" name='email' value='<%=dat.email %>'>
+    <input type="text" name='mobile' value='<%= dat.mobile %>'>
+    <input type="text" name='city' value='<%= dat.city%>'>
+    <input type="password" name='password' value='<%= dat.password%>'>
+    <button type='submit'></button>
+    <a href='/front'>list of candidates</a>
+</form>
